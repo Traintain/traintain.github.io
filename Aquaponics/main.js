@@ -89,7 +89,7 @@ function inicioPaso1() {
     infoRonda[ronda][1] +
     " pasará en esta ronda. Luego de que pase, los campos";
   txt +=
-    campos > 0
+    campos > 40
       ? " solo podrán alimentar a " +
         (campos - infoRonda[ronda][2]) +
         " personas</p>"
@@ -107,7 +107,7 @@ function inicioPaso1() {
       " campos), +$" +
       infoRonda[ronda + 1][0];
   } else {
-    proximaRonda = "Es la última ronda";
+    proximaRonda = "Esta es la última ronda";
   }
   document.getElementById("proxima-ronda").innerText = proximaRonda;
   verElemento("btn-dinero", true);
