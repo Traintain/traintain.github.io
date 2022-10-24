@@ -98,7 +98,7 @@ function inicioPaso1() {
   document.getElementById("descripcion-paso").innerHTML = txt;
 
   let proximaRonda = "";
-  if (ronda < 6) {
+  if (ronda < 5) {
     proximaRonda =
       "Viene " +
       infoRonda[ronda + 1][1] +
