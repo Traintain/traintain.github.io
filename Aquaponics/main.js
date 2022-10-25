@@ -560,7 +560,7 @@ function paso7() {
 
   ronda += 1;
 
-  if (ronda === 6) {
+  if (ronda === 5) {
     Swal.fire({
       icon: "success",
       title: "¡Felicidades!",
