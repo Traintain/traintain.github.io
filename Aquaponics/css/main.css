@@ -309,6 +309,7 @@
     margin-bottom: 2%;
     margin-left: 5%;
     margin-right: 5%;
+    height: 8%;
 }
 
 .marco-clickeable{
@@ -318,7 +319,7 @@
 }
 
 #marco-descripcion{
-    height: 65%;
+    height: 60%;
     margin-top: 2%;
     margin-bottom: 2%;
     margin-left: 5%;
@@ -347,6 +348,7 @@
     margin-top: 2%;
     margin-bottom: 2%;
     font-size: 220%;
+    height: 8%;
 }
 
 #marco-siguiente-ronda{
@@ -354,6 +356,8 @@
     margin-bottom: 2%;
     margin-left: 5%;
     margin-right: 5%;
+    height: 16%;
+    font-size: 180%;
 }
 
 #marco-terreno{

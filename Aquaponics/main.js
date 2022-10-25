@@ -511,6 +511,17 @@ function paso5() {
     document.getElementById("totalSilo").innerText = silo;
     document.getElementById("totalCampos").innerText = 0;
     inicioPaso6();
+    if (ronda === 6) {
+      Swal.fire({
+        icon: "success",
+        title: "¡Felicidades!",
+        text: "¡Ganaste!",
+        confirmButtonText: "Jugar de Nuevo",
+        allowOutsideClick: false,
+      }).then((result) => {
+        reiniciarVariables();
+      });
+    }
   } else {
     // La persona perdió
     Swal.fire({
@@ -559,18 +570,6 @@ function paso7() {
   verElemento("btn-continuar", true);
 
   ronda += 1;
-
-  if (ronda === 5) {
-    Swal.fire({
-      icon: "success",
-      title: "¡Felicidades!",
-      text: "¡Ganaste!",
-      confirmButtonText: "Jugar de Nuevo",
-      allowOutsideClick: false,
-    }).then((result) => {
-      reiniciarVariables();
-    });
-  }
 }
 
 /**
@@ -584,6 +583,7 @@ function reiniciarVariables() {
   document.getElementById("totalCampos").innerText = 0;
   document.getElementById("dinero").innerText = 0;
   document.getElementById("silo").innerText = 0;
+  verElemento("btn-silo", false);
 
   ronda = 1;
   biofiltro = false;
