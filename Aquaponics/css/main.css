@@ -60,6 +60,7 @@
 #btn-continuar{
     background-color: #eef3c0;
     font-family: source-sans-pro,sans-serif;
+    font-size: 140%;
     border-radius: 15px;
 }
 
@@ -324,7 +325,7 @@
     margin-bottom: 2%;
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 100%;
+    font-size: 140%;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -358,6 +359,8 @@
     margin-right: 5%;
     height: 16%;
     font-size: 180%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #marco-terreno{
