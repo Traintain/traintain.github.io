@@ -511,7 +511,7 @@ function paso5() {
     document.getElementById("totalSilo").innerText = silo;
     document.getElementById("totalCampos").innerText = 0;
     inicioPaso6();
-    if (ronda === 6) {
+    if (ronda === 5) {
       Swal.fire({
         icon: "success",
         title: "¡Felicidades!",
