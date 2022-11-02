@@ -28,8 +28,8 @@ const idCama = {
 };
 
 const idPiscicola = {
-  1: ["img-alevinos-1", false],
-  2: ["img-alevinos-2", false],
+  1: ["img-alevines-1", false],
+  2: ["img-alevines-2", false],
   3: ["img-peces-3", false],
 };
 
@@ -141,7 +141,7 @@ function inicioPaso2() {
           "<p>Tu sistema de hidroponía está dañado y no lo puedes usar</p>");
     vidaPiscicultura > 0
       ? (txt +=
-          "<p>Los aluvines alimentarán a " +
+          "<p>Los alevines alimentarán a " +
           (bomba ? 70 : 50) +
           " y podrán pescarse en la próxima ronda</p>")
       : (txt +=
@@ -253,7 +253,7 @@ function sembrar(cama) {
 }
 
 /**
- * Muestra las imágenes de los aluvines y los peces en el tanque
+ * Muestra las imágenes de los alevines y los peces en el tanque
  */
 function mostrarAlevines() {
   for (let i = 1; i <= 3; i++) {
@@ -455,7 +455,7 @@ function calcularProduccion() {
 }
 
 /**
- * Pesca los aluvines y oculta el botón para recogerlos
+ * Pesca los alevines y oculta el botón para recogerlos
  */
 function recolectarPeces() {
   bomba ? (comidaPiscicultura += 70) : (comidaPiscicultura += 50);
